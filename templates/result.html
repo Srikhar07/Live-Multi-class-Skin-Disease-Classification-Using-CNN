@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+
+<body>
+
+<div class="main">
+    <h1>Prediction Result</h1>
+    <hr>
+
+    <div class="card">
+
+        <div class="user-info">
+            <h3>Patient Details</h3>
+            <p><b>Name:</b> {{ name }}</p>
+            <p><b>Age:</b> {{ age }}</p>
+            <p><b>Phone:</b> {{ phone }}</p>
+            <p><b>Email:</b> {{ email }}</p>
+        </div>
+
+        <div class="image-section">
+            <h3>Uploaded Image</h3>
+            <img src="{{ image_path }}" alt="Uploaded Image">
+        </div>
+
+        <div class="prediction">
+            <h2>Disease Detected:</h2>
+            <h1 class="disease">{{ prediction }}</h1>
+            <p class="confidence">Confidence: {{ confidence }}%</p>
+        </div>
+
+    </div>
+
+    <a href="/">
+        <button class="back-btn">Go Back</button>
+    </a>
+
+</div>
+
+</body>
+</html>
