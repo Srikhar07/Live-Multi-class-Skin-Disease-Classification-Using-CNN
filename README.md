@@ -17,25 +17,6 @@ Output: Predicted disease class
 Saved Model: best_skin_model.h5
 The CNN learns visual features such as texture patterns, color variations, lesion shapes, and skin abnormalities.
 
-## 🗂️ Project Structure
-
-Live-Multi-class-Skin-Disease-Classification-Using-CNN/
-│
-├── dataset/                      # Training dataset
-├── model/
-│   └── best_skin_model.h5        # Trained CNN model
-├── static/
-│   ├── home.css
-│   ├── result.css
-│   └── uploads/                  # Uploaded images
-├── templates/
-│   ├── home.html
-│   └── result.html
-├── app.py                        # Flask backend
-├── skin.ipynb                    # Model training notebook
-├── opencv.py                     # Webcam logic (local)
-├── requirements.txt
-
 ## ⚙️ Features
 
 1️⃣ Image Upload Prediction
